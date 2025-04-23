@@ -127,18 +127,51 @@
     //     }
     //     let q=new Person("Harry","hat");
     //      console.log(q.firstname);
-    class Person{
-        constructor(firstName, lastName){
-            this.firstName = firstName;
-            this.lastName = lastName;
-        }
-        greet() {
-            console.log("Hello " + this.firstName + " " + this.lastName);
+    // class Person{
+    //     constructor(firstName, lastName){
+    //         this.firstName = firstName;
+    //         this.lastName = lastName;
+    //     }
+    //     greet() {
+    //         console.log("Hello " + this.firstName + " " + this.lastName);
+    //     }
+    // }
+    // Person.prototype.introduce = function() {
+    //     console.log("I am " + this.firstName + " " + this.lastName);
+    // }
+    // Person.prototype.favoriteColor="green";
+    // let p =new Person("maria","sega");
+    // console.log("favoritecolor");
+    // class Person{
+    //         constructor(firstName, lastName){
+    //             this.firstName = firstName;
+    //             this.lastName = lastName;
+    //         }
+    //         greet(){
+    //             console.log("Hello " + this.firstName + " " + this.lastName);
+
+    //         }
+    //         Person.prototype.introduce=function(){
+    //             console.log("Hi,I'm,"this.firstName);
+    //         };
+    //         Person.prototype.favoriteColor="Green";
+    //         let p=new Person ("Maria","Saga");
+    //         console.log(p.favoriteColor);
+    //         p.introduce();
+    //     }
+    class Person {
+        constructor(firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
         }
     }
-    Person.prototype.introduce = function() {
-        console.log("I am " + this.firstName + " " + this.lastName);
+    greet(){
+        console.log("Hello");
     }
-    Person.prototype.favoriteColor="green";
-    let p =new Person("maria","sega");
-    console.log("favoritecolor");
+    Person.prototype.introduce = function(){
+        console.log(" Hi, I,m", this.firstname);
+    };
+    Person.prototype.favouriteColor = "Green";
+    let p = new Person("Maria", "Saga");
+    console.log(p.favouriteColor);
+    p.introduce();
