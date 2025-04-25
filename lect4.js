@@ -159,19 +159,21 @@
     //         console.log(p.favoriteColor);
     //         p.introduce();
     //     }
-    class Person {
-        constructor(firstname, lastname){
-            this.firstname = firstname;
-            this.lastname = lastname;
-        }
-    }
-    greet(){
-        console.log("Hello");
-    }
-    Person.prototype.introduce = function(){
-        console.log(" Hi, I,m", this.firstname);
-    };
-    Person.prototype.favouriteColor = "Green";
-    let p = new Person("Maria", "Saga");
-    console.log(p.favouriteColor);
-    p.introduce();
+    // class Person {
+    //     constructor(firstname, lastname){
+    //         this.firstname = firstname;
+    //         this.lastname = lastname;
+    //     }
+    // }
+    // greet(){
+    //     console.log("Hello");
+    // }
+    // Person.prototype.introduce = function(){
+    //     console.log(" Hi, I,m", this.firstname);
+    // };
+    // Person.prototype.favouriteColor = "Green";
+    // let p = new Person("Maria", "Saga");
+    // console.log(p.favouriteColor);
+    // p.introduce();
+    //differences btw js and map:
+    
